@@ -1,0 +1,95 @@
+body {margin: 0;}
+* {box-sizing: border-box;
+   margin: 0;
+  font-family: Arial, sans-serif;
+}
+.board {
+  height: 200vh;
+  background: rgb(231, 210, 210);
+}
+.ui-sortable {
+  min-height: 80px;
+}
+.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border: 0;
+  background: transparent;
+  color:rgb(10, 21, 36);
+
+}
+.board h1 {
+  padding: 50px;
+  color:rgb(8, 8, 8);
+}
+.create-column {
+  margin-left: 80px;
+  border-radius: 10px;
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  background-color: rgba(187, 137, 137, 0.4);
+}
+.column-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.column {
+  order: 1;
+  min-width: 300px;
+  min-height: 50vh;
+  background: rgb(158, 136, 136);
+  border-radius: 5px;
+  margin-left:10px;
+  list-style: none;
+  position: relative;
+}
+.column-title {
+  color:rgb(8, 8, 8);
+  padding: 20px;
+}
+.column-add-card {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: rgba(189, 159, 159, 0.4);
+  margin: 5px 20px;
+  border-radius: 20px;
+  min-height: 35px;
+  font-weight: bold;
+  display: block;
+}
+.card {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  padding: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.card-list {
+  list-style: none;
+  margin: 5px;
+  padding: 0px;
+}
+.card-description {
+  height: 50px;
+  margin: 2px 0;
+  padding: 5px;
+  border-radius: 5px;
+  background: rgb(231, 210, 210);
+}
+.card-placeholder {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  background-color: rgba(187, 137, 137, 0.4);
+}
